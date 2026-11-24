@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: Service
+metadata: {name: aceest-canary, namespace: aceest}
+spec:
+  selector: {app: aceest-fitness, track: canary}
+  ports: [{port: 80, targetPort: http}]

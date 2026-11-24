@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: aceest-variant-b, namespace: aceest}
+spec:
+  replicas: 1
+  selector: {matchLabels: {app: aceest-fitness, variant: b}}
+  template:
+    metadata: {labels: {app: aceest-fitness, variant: b}}
+    spec:
+      containers:
+        - name: aceest-fitness
+          image: DOCKERHUB_USERNAME/aceest-fitness:variant-b
+          ports: [{name: http, containerPort: 5000}]
+          readinessProbe: {httpGet: {path: /ready, port: http}}
