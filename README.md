@@ -2,7 +2,7 @@
 
 A small Flask-based fitness-club application with a Jenkins CI/CD pipeline and Kubernetes deployment examples. The project is arranged around the requirements in the BITS Pilani *Introduction to DevOps* Assignment 2 brief.
 
-**Project contributors:** Sush, Chinmayi and Suhas.
+**Project contributors:** Sushmitha S
 
 ## Application
 
